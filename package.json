@@ -1,0 +1,24 @@
+{
+  "name": "nextjs-demo",
+  "version": "1.0.0",
+  "description": "Next.js demos",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akiran/nextjs-demo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akiran/nextjs-demo/issues"
+  },
+  "homepage": "https://github.com/akiran/nextjs-demo#readme",
+  "dependencies": {
+    "next": "^2.1.1",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
+  }
+}
