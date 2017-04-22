@@ -1,10 +1,12 @@
 import React from 'react'
-import Header from '../components/Header'
+import Link from 'next/link'
 
 export default function About() {
   return (
     <div>
-      <Header />
+      <Link href="/">
+        <a>Home</a>
+      </Link>
       <div>Next.js is minimalistic framework for server-side rendering apps</div>
     </div>
   )

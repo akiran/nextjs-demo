@@ -1,11 +1,12 @@
 import React from 'react'
 import Link from 'next/link'
-import Header from '../components/Header'
 
 export default function Home() {
   return (
     <div>
-      <Header />
+      <Link href="/about">
+        <a>About</a>
+      </Link>
       <div>Welcome to Next.js</div>
     </div>
   )
