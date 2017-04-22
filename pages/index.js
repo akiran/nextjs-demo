@@ -1,14 +1,15 @@
 import React from 'react'
 import Link from 'next/link'
 import Layout from '../components/Layout'
+
 const POST_IDS = [1, 2, 3, 4]
 
 const PostLink = ({postId}) => (
-  <li>
+  <div>
     <Link as={`/post/${postId}`} href={`/post?id=${postId}`}>
-      <a>{`Post ${postId}`}</a>
+      <button className='btn btn-default'>{`Post ${postId}`}</button>
     </Link>
-  </li>
+  </div>
 )
 
 export default function Home() {
