@@ -5,7 +5,7 @@ const POST_IDS = [1, 2, 3, 4]
 
 const PostLink = ({postId}) => (
   <li>
-    <Link href={`/post?id=${postId}`}>
+    <Link as={`/post/${postId}`} href={`/post?id=${postId}`}>
       <a>{`Post ${postId}`}</a>
     </Link>
   </li>
