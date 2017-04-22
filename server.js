@@ -9,6 +9,13 @@ app.prepare()
 .then(() => {
   const server = express()
 
+  server.get('/api/post/:id', (req, res) => {
+    res.json({
+      title: `Post ${req.params.id}`,
+      content: `Post ${req.params.id} content`
+    })
+  })
+
   server.get('/post/:id', (req, res) => {
     const actualPage = '/post'
     const queryParams = { id: req.params.id }

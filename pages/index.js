@@ -17,7 +17,7 @@ export default function Home() {
       <div>Welcome to Next.js</div>
       <h1>Posts</h1>
       <div>
-        { POST_IDS.map(postId => <PostLink postId={postId} />) }
+        { POST_IDS.map(postId => <PostLink key={postId} postId={postId} />) }
       </div>
     </Layout>
   )
