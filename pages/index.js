@@ -1,12 +1,10 @@
 import React from 'react'
-import Link from 'next/link'
-import Header from '../components/Header'
+import Layout from '../components/Layout'
 
 export default function Home() {
   return (
-    <div>
-      <Header />
+    <Layout>
       <div>Welcome to Next.js</div>
-    </div>
+    </Layout>
   )
 }
