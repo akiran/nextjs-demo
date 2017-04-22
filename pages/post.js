@@ -7,8 +7,17 @@ export default class Post extends React.Component {
     const {post} = this.props
     return (
       <Layout>
-        <h1>{post.title}</h1>
-        <div>{post.content}</div>
+        <h1 className='title'>{post.title}</h1>
+        <div className='content'>{post.content}</div>
+        <style jsx>{`
+          .title {
+            background: #ccc;
+            border-bottom: 1px solid black;
+          }
+          .content {
+            font-size: 20px;
+          }
+        `}</style>
       </Layout>
     )
   }
